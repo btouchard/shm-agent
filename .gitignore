@@ -1,0 +1,38 @@
+# Binaries
+/shm-agent
+/shm-agent-stripped
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Output of go coverage
+*.out
+coverage.html
+
+# Go workspace
+go.work
+go.work.sum
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Identity files (sensitive)
+shm_identity.json
+*.identity.json
+
+# Local config
+config.local.yaml
+shm_identity.json

@@ -1,0 +1,3 @@
+# Invalid config - missing required fields
+app_name: test-app
+# Missing: server_url, app_version, sources

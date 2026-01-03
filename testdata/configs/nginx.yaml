@@ -1,0 +1,47 @@
+server_url: https://shm.example.com
+app_name: nginx-logs
+app_version: "1.0.0"
+environment: test
+interval: 60s
+
+sources:
+  - path: testdata/logs/nginx_access.log
+    format: regex
+    pattern: '^(?P<ip>\S+) \S+ \S+ \[(?P<time>[^\]]+)\] "(?P<method>\S+) (?P<path>\S+) (?P<protocol>[^"]*)" (?P<status>\d+) (?P<bytes>\d+) "(?P<referer>[^"]*)" "(?P<useragent>[^"]*)"'
+
+    metrics:
+      - name: http_requests
+        type: counter
+
+      - name: http_2xx
+        type: counter
+        match:
+          field: status
+          regex: "^2\\d{2}$"
+
+      - name: http_4xx
+        type: counter
+        match:
+          field: status
+          regex: "^4\\d{2}$"
+
+      - name: http_5xx
+        type: counter
+        match:
+          field: status
+          regex: "^5\\d{2}$"
+
+      - name: bytes_served
+        type: sum
+        extract:
+          field: bytes
+
+      - name: unique_ips
+        type: set
+        extract:
+          field: ip
+
+      - name: unique_paths
+        type: set
+        extract:
+          field: path

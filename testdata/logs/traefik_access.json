@@ -1,0 +1,15 @@
+{"ClientAddr":"192.168.1.1:54321","ClientHost":"192.168.1.1","Duration":1234567,"OriginStatus":200,"RequestMethod":"GET","RequestPath":"/api/health","time":"2024-01-15T10:30:00Z"}
+{"ClientAddr":"192.168.1.2:54322","ClientHost":"192.168.1.2","Duration":2345678,"OriginStatus":200,"RequestMethod":"POST","RequestPath":"/api/login","time":"2024-01-15T10:30:01Z"}
+{"ClientAddr":"192.168.1.3:54323","ClientHost":"192.168.1.3","Duration":567890,"OriginStatus":201,"RequestMethod":"POST","RequestPath":"/api/users","time":"2024-01-15T10:30:02Z"}
+{"ClientAddr":"192.168.1.1:54324","ClientHost":"192.168.1.1","Duration":345678,"OriginStatus":200,"RequestMethod":"GET","RequestPath":"/api/users/1","time":"2024-01-15T10:30:03Z"}
+{"ClientAddr":"192.168.1.4:54325","ClientHost":"192.168.1.4","Duration":1500000,"OriginStatus":404,"RequestMethod":"GET","RequestPath":"/api/nonexistent","time":"2024-01-15T10:30:04Z"}
+{"ClientAddr":"192.168.1.5:54326","ClientHost":"192.168.1.5","Duration":5000000,"OriginStatus":500,"RequestMethod":"POST","RequestPath":"/api/error","time":"2024-01-15T10:30:05Z"}
+{"ClientAddr":"192.168.1.6:54327","ClientHost":"192.168.1.6","Duration":3000000,"OriginStatus":502,"RequestMethod":"GET","RequestPath":"/api/gateway","time":"2024-01-15T10:30:06Z"}
+{"ClientAddr":"192.168.1.7:54328","ClientHost":"192.168.1.7","Duration":2500000,"OriginStatus":503,"RequestMethod":"GET","RequestPath":"/api/overloaded","time":"2024-01-15T10:30:07Z"}
+{"ClientAddr":"192.168.1.1:54329","ClientHost":"192.168.1.1","Duration":800000,"OriginStatus":200,"RequestMethod":"GET","RequestPath":"/api/health","time":"2024-01-15T10:30:08Z"}
+{"ClientAddr":"192.168.1.2:54330","ClientHost":"192.168.1.2","Duration":1200000,"OriginStatus":200,"RequestMethod":"DELETE","RequestPath":"/api/users/2","time":"2024-01-15T10:30:09Z"}
+{"ClientAddr":"192.168.1.8:54331","ClientHost":"192.168.1.8","Duration":600000,"OriginStatus":204,"RequestMethod":"PUT","RequestPath":"/api/settings","time":"2024-01-15T10:30:10Z"}
+{"ClientAddr":"192.168.1.9:54332","ClientHost":"192.168.1.9","Duration":1800000,"OriginStatus":401,"RequestMethod":"GET","RequestPath":"/api/admin","time":"2024-01-15T10:30:11Z"}
+{"ClientAddr":"192.168.1.10:54333","ClientHost":"192.168.1.10","Duration":900000,"OriginStatus":403,"RequestMethod":"DELETE","RequestPath":"/api/protected","time":"2024-01-15T10:30:12Z"}
+{"ClientAddr":"192.168.1.1:54334","ClientHost":"192.168.1.1","Duration":450000,"OriginStatus":200,"RequestMethod":"GET","RequestPath":"/api/status","time":"2024-01-15T10:30:13Z"}
+{"ClientAddr":"192.168.1.3:54335","ClientHost":"192.168.1.3","Duration":750000,"OriginStatus":200,"RequestMethod":"PATCH","RequestPath":"/api/users/3","time":"2024-01-15T10:30:14Z"}

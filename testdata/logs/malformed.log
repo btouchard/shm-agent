@@ -1,0 +1,11 @@
+{"timestamp":"2024-01-15T10:30:00Z","level":"info","event":"valid_event"}
+not json at all
+{"timestamp":"2024-01-15T10:30:01Z","level":"info","event":"another_valid"}
+{"broken": json here
+{"timestamp":"2024-01-15T10:30:02Z","level":"error","event":"valid_error"}
+
+{"timestamp":"2024-01-15T10:30:03Z","level":"info"}
+random text in the middle
+{"timestamp":"2024-01-15T10:30:04Z","level":"warn","event":"valid_warning"}
+{"incomplete":
+{"timestamp":"2024-01-15T10:30:05Z","level":"info","event":"last_valid"}

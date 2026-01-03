@@ -1,0 +1,44 @@
+server_url: https://shm.example.com
+app_name: myapp-logs
+app_version: "1.0.0"
+environment: test
+interval: 60s
+
+sources:
+  - path: testdata/logs/app.log
+    format: json
+
+    metrics:
+      - name: requests_processed
+        type: counter
+        match:
+          field: event
+          equals: "request_processed"
+
+      - name: errors_count
+        type: counter
+        match:
+          field: level
+          in: ["error", "fatal"]
+
+      - name: warnings_count
+        type: counter
+        match:
+          field: level
+          equals: "warn"
+
+      - name: unique_users
+        type: set
+        extract:
+          field: user_id
+
+      - name: total_duration_ms
+        type: sum
+        extract:
+          field: duration_ms
+
+      - name: database_errors
+        type: counter
+        match:
+          field: event
+          contains: "database"

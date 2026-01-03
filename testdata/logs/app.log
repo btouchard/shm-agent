@@ -1,0 +1,20 @@
+{"timestamp":"2024-01-15T10:30:00Z","level":"info","event":"request_processed","user_id":"user_123","duration_ms":45,"method":"GET","path":"/api/users"}
+{"timestamp":"2024-01-15T10:30:01Z","level":"info","event":"request_processed","user_id":"user_456","duration_ms":120,"method":"POST","path":"/api/data"}
+{"timestamp":"2024-01-15T10:30:02Z","level":"error","event":"database_error","error":"connection timeout","user_id":"user_789"}
+{"timestamp":"2024-01-15T10:30:03Z","level":"info","event":"request_processed","user_id":"user_123","duration_ms":35,"method":"GET","path":"/api/health"}
+{"timestamp":"2024-01-15T10:30:04Z","level":"warn","event":"slow_query","query":"SELECT * FROM users","duration_ms":500}
+{"timestamp":"2024-01-15T10:30:05Z","level":"info","event":"request_processed","user_id":"user_101","duration_ms":80,"method":"PUT","path":"/api/settings"}
+{"timestamp":"2024-01-15T10:30:06Z","level":"fatal","event":"database_connection_lost","error":"no route to host"}
+{"timestamp":"2024-01-15T10:30:07Z","level":"info","event":"request_processed","user_id":"user_456","duration_ms":55,"method":"DELETE","path":"/api/item/1"}
+{"timestamp":"2024-01-15T10:30:08Z","level":"debug","event":"cache_hit","key":"user:123","ttl":300}
+{"timestamp":"2024-01-15T10:30:09Z","level":"info","event":"request_processed","user_id":"user_202","duration_ms":90,"method":"GET","path":"/api/reports"}
+{"timestamp":"2024-01-15T10:30:10Z","level":"error","event":"validation_error","field":"email","message":"invalid format","user_id":"user_303"}
+{"timestamp":"2024-01-15T10:30:11Z","level":"info","event":"request_processed","user_id":"user_123","duration_ms":25,"method":"GET","path":"/api/profile"}
+{"timestamp":"2024-01-15T10:30:12Z","level":"warn","event":"rate_limit_warning","user_id":"user_456","remaining":5}
+{"timestamp":"2024-01-15T10:30:13Z","level":"info","event":"request_processed","user_id":"user_404","duration_ms":150,"method":"POST","path":"/api/upload"}
+{"timestamp":"2024-01-15T10:30:14Z","level":"info","event":"user_login","user_id":"user_505","ip":"192.168.1.1"}
+{"timestamp":"2024-01-15T10:30:15Z","level":"info","event":"request_processed","user_id":"user_505","duration_ms":40,"method":"GET","path":"/api/dashboard"}
+{"timestamp":"2024-01-15T10:30:16Z","level":"error","event":"external_api_error","service":"payment","status":503}
+{"timestamp":"2024-01-15T10:30:17Z","level":"info","event":"request_processed","user_id":"user_101","duration_ms":65,"method":"PATCH","path":"/api/user/profile"}
+{"timestamp":"2024-01-15T10:30:18Z","level":"warn","event":"deprecated_endpoint","path":"/api/v1/old","suggestion":"/api/v2/new"}
+{"timestamp":"2024-01-15T10:30:19Z","level":"info","event":"request_processed","user_id":"user_606","duration_ms":110,"method":"GET","path":"/api/search"}

@@ -1,0 +1,40 @@
+server_url: https://shm.example.com
+app_name: traefik-logs
+app_version: "1.0.0"
+environment: test
+interval: 60s
+
+sources:
+  - path: testdata/logs/traefik_access.json
+    format: json
+
+    metrics:
+      - name: http_requests
+        type: counter
+
+      - name: http_success
+        type: counter
+        match:
+          field: OriginStatus
+          regex: "^2\\d{2}$"
+
+      - name: http_errors
+        type: counter
+        match:
+          field: OriginStatus
+          regex: "^[45]\\d{2}$"
+
+      - name: total_duration_ns
+        type: sum
+        extract:
+          field: Duration
+
+      - name: unique_clients
+        type: set
+        extract:
+          field: ClientHost
+
+      - name: unique_paths
+        type: set
+        extract:
+          field: RequestPath
