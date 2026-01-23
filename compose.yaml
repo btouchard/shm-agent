@@ -1,0 +1,9 @@
+services:
+
+  shm-agent:
+    pull_policy: build
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    volumes:
+      - "./testdata:/app/testdata"
