@@ -18,14 +18,14 @@ A lightweight, autonomous agent that collects metrics by parsing log files and s
 ### From Source
 
 ```bash
-git clone https://github.com/kolapsis/shm-agent.git
+git clone https://github.com/btouchard/shm-agent.git
 cd shm-agent
 go build -ldflags="-s -w" -o shm-agent ./cmd/shm-agent
 ```
 
 ### Binary Releases
 
-Download pre-built binaries from the [Releases](https://github.com/kolapsis/shm-agent/releases) page.
+Download pre-built binaries from the [Releases](https://github.com/btouchard/shm-agent/releases) page.
 
 ## Quick Start
 
